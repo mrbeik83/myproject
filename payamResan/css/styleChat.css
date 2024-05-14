@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ostad";
+    
+}
+@font-face {
+    font-family: ostad;
+    src: url(iransans.ttf);
+}
+body{
+    background-image : url(/picture/back.png) ;
+    background-size: cover;
+}
+.contaner {
+    
+    margin: 10px 150px;
+    display: flex;
+    height: 97vh;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cont-left {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.cont-left-prof {
+    background-color: gainsboro;
+    height: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.prof-left {
+    width: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+}
+.prof-left img{
+    width: 30px;
+}
+.prof-left a{
+    width: max-content;
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.prof-right {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.prof-right img{
+    width: 50px;
+}
+.prof-right p{
+    margin-right: 20px;
+}
+.cont-left-mid {
+    height: 90%;
+    margin: 20px;
+    margin-right: 40px;
+    background-color: aliceblue;
+    overflow: auto;
+    border-radius: 10px;
+}
+.cont-left-mid-div{
+    display: flex;
+    flex-direction: column; 
+}
+.cont-left-mid-text{
+    margin: 20px;
+    border-radius: 20px;
+    width: max-content;
+    padding: 20px;
+    font-size: larger;
+    background-color: rgb(180, 235, 221);    
+}
+.cont-left-down {
+    background-color: gainsboro;
+    height: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.down-left {
+    width: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.down-left img{
+    width: 30px;
+}
+.down-left a{
+    width: max-content;
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.down-right {
+    width: 80%;
+    display: flex;
+}
+.down-right p{
+    font-size: large;
+    margin-top: 5px;
+}
+.down-right div{
+    width: max-content;
+    width: 30px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.down-right textarea{
+    background-color: gainsboro;
+    width: 100%;
+    border: none;
+    font-size: large;
+    padding-top: 10px;
+    padding-right: 10px;
+    
+}
+.down-right textarea:focus{
+    outline: 0;
+}
+/*in gesmat rast ghazie*/
+.cont-right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.cont-right-up {
+    height: 5%;
+    display: flex;
+    border-bottom:1px solid black ;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cont-right-up-right {
+    background-color: gainsboro;
+    width: 40%;
+}
+.cont-right-up-right p{
+    margin: 10px;
+    margin-right: 20px;
+}
+.cont-right-up-left {
+    background-color: gainsboro;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.cont-right-up-left img{
+    width: 30px;
+    height: 3vh;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* .cont-right-up-left a{
+    width: max-content;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+} */
+.cont-right-down {
+    background-color: gainsboro;
+    border-radius: 10px;
+    margin-top : 10px;
+    display: flex;   
+    flex-direction: column;
+    height: 95%;
+    overflow: auto;
+}
+.cont-right-down-up{
+    height: 80%;
+    
+}
+.cont-right-down-up-div{
+    height: max-content;
+    width: 90%;
+    margin: 10px;
+    margin-top: 25px;
+    background-color: rgb(160, 202, 202);
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+.cont-right-down-up a{
+    margin-top: 5px;
+}
+.cont-right-down-up-div:hover{
+    background-color: cornsilk;
+}
+.cont-right-down-up-div p{
+    padding: 15px;
+
+}
+.cont-right-down-down{
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    overflow: auto;
+    background-color: gainsboro;
+    position: sticky;
+    
+}
+.cont-right-down-down p{
+    font-size: xx-large;
+    margin-top: 5px;
+    cursor: pointer;
+}
+audio{
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+.container-modal{
+    margin:4% auto;
+    width: max-content;
+    background-color: rgb(191, 201, 230);
+    display: none;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.num1-modal {
+    display: flex;
+    flex-direction: column ;
+    margin: 25px;
+}
+.num1-modal label{
+    margin: 10px;
+}
+.num1-modal input{
+    height: 2.5em;
+    width: 200px;
+    border: 2px solid skyblue ;
+    border-radius: 10px;
+}
+.btn-modal {
+    display: flex;
+    justify-content: center;
+}
+.btn-modal button {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    height: 35px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-modal button:hover{
+    background-color: rgb(173, 245, 125);
+    transition: 300ms;
+}h1{
+    margin: 150px 450px 0px;
+}
+
+
+
+.container-add{
+    margin:4% auto;
+    width: max-content;
+    background-color: rgb(193, 240, 218);
+    display: none;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.num1-add {
+    display: flex;
+    flex-direction: column ;
+    margin: 25px;
+}
+.num1-add label{
+    margin: 10px;
+}
+.num1-add input{
+    height: 2.5em;
+    width: 200px;
+    border: 2px solid skyblue ;
+    border-radius: 10px;
+}
+.btn-add {
+    display: flex;
+    justify-content: center;
+}
+.btn-add button {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    height: 35px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-add button:hover{
+    background-color: rgb(173, 245, 125);
+    transition: 300ms;
+}
